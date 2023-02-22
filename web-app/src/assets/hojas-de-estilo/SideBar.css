@@ -1,0 +1,109 @@
+/* /* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+/* .sidebar-container {
+  //position: fixed;
+} */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 1250%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7d7d7e;
+  border-left: none;
+  border-top: none;
+  height: 100%;
+  position: fixed;
+  float: left;
+  width: 20%;
+  top: 12vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.sidebar-hidden {
+  width: 40px;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar-hidden {
+    width: 0px;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .sidebar-text{
+    padding-left: 5px;
+  }
+}
+
+.sidebar-text {
+  padding-left: 15px;
+  transition: all 0.5s;
+}
+.text-hidden {
+  width: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.sidebar-header {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.Elementos:hover {
+  color: white;
+    background: linear-gradient(to right,#403D3F, 0.1%, #EC428C,#FF69B4);
+    font-size: larger;
+    transition: 0.5s !important;
+}
+.element-icon {
+  width: 10px;
+}
+.tipoUsuario {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.nav-link:hover {
+  color: white;
+  background: white;
+}
+.items-menu {
+  color: #fff;
+  background: #000000;
+}
+/* li a.dropdown-toggle::after {
+  display: inline-flex;
+  position: relative;
+  left: 60%;
+  top: 10%;
+}  */
+.sidebar-header > span {
+  position: relative;
+  float: right;
+  margin: 0.5em;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+/* .side-menu::-webkit-scrollbar {
+    width: 10px;
+  } */
+
+/* .side-menu::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 3px;
+  } */
+
+/* .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+  }  */
+.sidebar-spacer {
+  padding-left: 5%;
+}
+.sidebar-spacer-hidden {
+  padding-left: 30%;
+}

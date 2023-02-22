@@ -1,0 +1,69 @@
+.fondo-pantallaMP {
+    padding-top: 3rem;
+    height: 89.5vh;
+    padding-bottom: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125%;
+}
+
+.caja-Perfil{
+        background-color: white;
+        min-height: 100%;
+        min-width: 80%;
+        border-radius: 25px;
+}
+
+.h2{
+    font-family: 'CrimsonText';
+    color:#ec428c;
+    padding-bottom: 0.51em;
+    padding-top: 1rem;
+}
+
+.form-Mod{
+    margin: 1.5em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: .5rem;
+}
+
+
+.contenedor{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: stretch;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.input-items{
+    margin-bottom: 1rem;
+}
+
+
+.boton {
+    background-color: #ec428c;
+    color: white;
+    width: 15rem;
+    height : 2.5rem;
+}
+.Forms{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.tituloMOD{
+    font-size: 1rem;
+    font-weight: bold;
+}

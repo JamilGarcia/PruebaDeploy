@@ -1,0 +1,17 @@
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    height: 85%;
+    
+}
+
+.Ventana{
+    width: 100%;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

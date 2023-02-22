@@ -1,0 +1,17 @@
+.sg_gp_caja{
+    background-color: white;
+    height: 100%;
+    width: 162%;
+    border-radius: 25px;
+    
+}
+
+.sg_gp_fondo{
+    padding-top: 2rem;
+    height: 91.5vh;
+    padding-bottom: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}

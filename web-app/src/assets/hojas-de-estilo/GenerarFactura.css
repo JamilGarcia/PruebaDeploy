@@ -1,0 +1,17 @@
+.g_gf_caja{
+    background-color: white;
+    height: 100%;
+    width: 175%;
+    border-radius: 25px;
+
+}
+
+.g_gf_fondo{
+    padding-top: 2rem;
+    height: 91.5vh;
+    padding-bottom: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}

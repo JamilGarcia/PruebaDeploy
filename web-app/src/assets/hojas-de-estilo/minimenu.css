@@ -1,0 +1,22 @@
+.g_mm_fondo{
+    background-color: #EC428C;
+}
+.g_mm_caja{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.g_mm_elementos{
+    font-size: 1.5rem;
+    padding:5px;
+    color:white;
+}
+
+.g_mm_elementos:hover{
+    background-color: #F9C6DD !important;
+    font-size: 2rem;
+}

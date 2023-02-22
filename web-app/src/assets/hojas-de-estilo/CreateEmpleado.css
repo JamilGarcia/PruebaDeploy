@@ -1,0 +1,123 @@
+.fondo-pantalla-cre {
+ height: 100%;
+  width: 100%;
+  background-image: linear-gradient( #ec428c 0%, #ec428c 50%,
+   #f9c6dd 50%, #f9c6dd 100% );
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.password_segmento{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding-left: 8.5%;
+}
+
+.CuadroCentrado-cre {
+  display: flex;
+  flex-direction: row;
+  min-height: 85vh;
+  width: 90%;
+  background-color: white;
+  border-style: solid;
+  border-color: #ec428b;
+  border-radius: 1%;
+}
+.seccion_entradas{
+  width: 10%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.seccion_entradas-cre{
+  display: flex;
+  
+}
+
+.seccion_3{
+  background-color: #ec428b;
+}
+
+.Boton_config{
+  width: max-content;
+  margin-left: -25%;
+  background-color: #ec428b;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.form-control-cre{
+  border-radius: 10px;
+  min-height: 5vh;
+  width: 20vw;
+  border-color: black;
+  background-color: #ECECEC;
+  font-size: 100%;
+}
+.form-label-cre{
+  font-size: 100%;
+  padding-bottom: 5px;
+}
+.Tituloc{
+  color: #fff;
+  font-family: 'CrimsonText';
+  font-weight: bold;
+  float: center;
+}
+
+#tipo_Cuenta{
+  border-radius: 10px;
+  min-height: 5vh;
+  width: 21vw;
+  border-color: black;
+  background-color: #ECECEC;
+  font-size: 100%;
+}
+
+.mensaje_error-cre{
+  color: red;
+  font-size: small;
+  min-height:1.5em;
+}
+.passEye{
+  margin-left:0.5%;
+  background-color:#ECECEC;
+  min-height: 5vh;
+  width: 12%;
+  margin-top: -1.8%;
+  border-color: black;
+  align-content: center;
+
+}
+
+.Foto_crePerfil{
+  margin-left: -15%;
+  width: 22vh;
+  height: 23vh;
+}  
+  
+.InputFile_CreateUser{
+  width: 80%;
+  background-color: #ec428b
+  
+}
+.formSpace{
+  height: 20%;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mig-3{
+  --bs-gutter-x: 1rem;
+}
+
+.prueba{
+  background-color: #ec428c;
+  height: 10000vh;
+  box-sizing: 1000vh;
+}

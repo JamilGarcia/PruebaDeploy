@@ -1,0 +1,27 @@
+/* ---------------------------------------------------
+    VETANA STYLE
+----------------------------------------------------- */
+.ventana {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  max-width: 250px !important;
+}
+
+.separaciones {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+  justify-content: flex-start;
+    align-content: stretch;
+}
+
+.espacioVentanas{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,279 @@
+.estiloHeading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #E6CEF7;
+}
+
+#BarraHerramientas {
+  border-style: solid;
+  border-radius: 26px;
+  height: 20px;
+  width: 98%;
+  margin: 1rem;
+  background-color: #EE66A1;
+}
+
+#MenuDiv {
+  width: 25%;
+  /*border-style: solid;*/
+  height: 56rem;
+  margin: 1rem;
+  margin-top: 0rem;
+}
+
+#MenuTitulo {
+  border-style: solid;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 26px;
+  background-color: #EE66A1;
+}
+
+#MenuElementos {
+  border-style: solid;
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  border-radius: 26px;
+  margin-top: -0.2rem;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  background-color: #ECB2DB;
+}
+
+#Elemento1 {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+}
+
+#Elemento2 {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+}
+
+#Elemento3 {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+}
+
+#Elemento4 {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+}
+
+.MenuVentanas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.Ventanas {
+  /*border-style: solid;*/
+  width: 70%;
+  height: 54.3rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+#TituloVentana1 {
+  border-style: solid;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 26px;
+  background-color: #EE66A1;
+}
+
+#Ventana1 {
+  border-style: solid;
+  height: 61%;
+  width: 97%;
+  margin: auto;
+  border-radius: 26px;
+  margin-top: -0.1rem;
+  border-top: none;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#ventanaText {
+  border-style: solid;
+  width: 97%;
+  height: 97%;
+  margin: auto;
+  border-radius: 26px;
+  border-top: none;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  background: white;
+}
+
+#TituloVentana2 {
+  border-style: solid;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 26px;
+  margin-top: 1rem;
+  background-color: #EE66A1;
+}
+
+#Ventana2 {
+  border-style: solid;
+  height: 29%;
+  width: 97%;
+  margin: auto;
+  border-radius: 26px;
+  margin-top: -0.3rem;
+  border-top: none;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#ventana2Text {
+  border-style: solid;
+  width: 97%;
+  height: 97%;
+  margin: auto;
+  border-radius: 26px;
+  border-top: none;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  background-color: white;
+}
+
+.TxtMenuTitulo {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.TxtElements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-top: -16px;
+  color: white;
+}
+.Icono_Menu{
+  color: white;
+  display: flex;
+  font-size: 60px;
+  margin-top: 10px;
+}
+#Elemento1sub {
+
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+}
+
+#Elemento2sub {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+  margin-bottom: 5rem;
+  
+
+}
+
+#Elemento3sub {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+  margin-bottom: 2rem;
+}
+
+#Elemento4sub {
+  border-style: solid;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 26px;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: #ED8BBE;
+}

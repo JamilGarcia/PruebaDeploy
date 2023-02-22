@@ -1,0 +1,167 @@
+/*.fondo-pantallaLE {
+  min-height: 83vh;
+  background-image: linear-gradient(
+    #ec428c 0%,
+    #ec428c 40%,
+    #f9c6dd 40%,
+    #f9c6dd 100%
+  );
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+.caja-derechaLE {
+  background-color: white;
+  min-height: 60vh;
+  min-width: 40%;
+  border-radius: 15px;
+  max-height: 72vh;
+  max-width: 75vh;
+  
+}
+.caja-izquierdaLE {
+  background-color: white;
+  min-height: 80vh;
+  min-width: 50%;
+  border-radius: 15px;
+  max-height: 82vh;
+}
+
+.botonesModificacionLE {
+  display: flex;
+  gap: 68%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.botonModificacionLE {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "CrimsonText", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #ec428c;
+}
+
+.botonModificacionLE:hover {
+  border-color: grey;
+}
+
+.botonCambiarFotoLE {
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "CrimsonText", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #ec428c;
+}
+
+.botonCambiarFotoLE:hover {
+  border-color: grey;
+}
+
+.InputsNombreLE, .InputsApellido-CorreoLE {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding-bottom: 15px;
+}
+
+
+
+.FirstNameLE {
+  padding-left: 15%;
+}
+.SecondNameLE{
+  padding-right: 15%;
+}
+
+
+.ApellidosLE {
+  padding-left: 15%;
+}
+.CorreoLE {
+  padding-right: 15%;
+}
+
+.NombreVacioLabelLE, .ApellidosVacioLabelLE, .CorreoVacioLabelLE{
+  color:red;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.Avatar-logoLE{
+  width: 30%;
+}
+
+.formDatos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.formsDatos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.form-label-mod{
+  font-size: 100%;
+  padding-bottom: 6px;
+}
+.form-control-mod{
+border-radius: 10px;
+min-height: 5vh;
+width: 10vw;
+border-color: black;
+background-color: #ECECEC;
+font-size: 100%;
+}
+
+.mensaje_error-mod{
+  color: red;
+  font-size: small;
+  min-height:1.5em;
+}
+.Juntos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  padding: 1rem;
+}
+.Juntos2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+ 
+}*/

@@ -1,0 +1,24 @@
+{
+  "name": "ingsoftware_proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd web-app && npm install && npm start",
+    "heroku-start": "cd web-app  && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamilGarcia/IngSoftware_Proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamilGarcia/IngSoftware_Proyecto/issues"
+  },
+  "homepage": "https://github.com/JamilGarcia/IngSoftware_Proyecto#readme",
+  "dependencies": {
+   
+  }
+}

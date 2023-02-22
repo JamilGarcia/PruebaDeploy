@@ -1,0 +1,41 @@
+/* ---------------------------------------------------
+    TOPBAR STYLE
+----------------------------------------------------- */
+
+.topbar {
+  background: #ff69b4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 12vh;
+  width: 100vw;
+  border-bottom: 1px solid #7d7d7e;
+  position: fixed;
+}
+
+.topbar-left {
+
+  color: white ;
+  text-shadow: #F9C6DD 0.1em 0.1em 0.3em;
+  font-size: 2.5rem;
+  padding-left: 1rem;
+}
+
+.topbar-right {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  color: white ;
+  text-shadow: #7d7d7e 0.1em 0.1em 0.2em;
+}
+
+.topbar-spacer {
+  padding-top: 12vh;
+}
+
+.btn{
+  color: white ;
+  text-shadow: #F9C6DD 0.1em 0.1em 0.3em;
+}

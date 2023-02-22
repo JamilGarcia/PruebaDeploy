@@ -1,0 +1,42 @@
+.mf_fondo{
+    height: 100%;
+    width: 100%;
+    background-color: #F9C6DD;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    overflow: hidden;
+}
+
+.mf_caja1{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: 80%;
+    background-color: white;
+    border-style: solid;
+    border-color: #ec428b;
+    border-radius: 1%;
+    overflow: scroll;
+    align-items: center;
+}
+
+.mf_caja2{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: space-evenly;
+    height: 70%;
+    width:80%;
+    background-color: white;
+    border-style: solid;
+    border-color: #ec428b;
+    border-radius: 1%;
+    overflow: scroll;;
+}

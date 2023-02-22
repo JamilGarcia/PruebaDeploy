@@ -1,0 +1,127 @@
+.fondo-pantalla-coti {
+  min-height: 88vh;
+  width: 80vw;
+  background-image: linear-gradient(
+    #ec428c 0%,
+    #ec428c 50%,
+    #f9c6dd 50%,
+    #f9c6dd 100%
+  );
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Titulocoti {
+  color: #fff;
+  font-family: 'CrimsonText';
+  font-weight: bold;
+  float: center;
+}
+.CuadroCentrado-coti {
+  display: flex;
+  flex-direction: row;
+  min-height: 80vh;
+  width: 90%;
+  background-color: white;
+  border-style: solid;
+  border-color: #ec428b;
+  border-radius: 1%;
+}
+<<<<<<< HEAD
+/* .secionEntradas-coti {
+} */
+=======
+.secionEntradas-coti {
+}
+>>>>>>> b2fb13532aca1d40fb32b4917de94ea9be7d3550
+.mensaje_error-coti {
+  color: red;
+  font-size: small;
+  min-height: 1.5em;
+}
+.formSpace-coti {
+  height: 17%;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-control-coti {
+  border-radius: 10px;
+  min-height: 5vh;
+  width: 20vw;
+  border-color: black;
+  background-color: #ececec;
+  font-size: 100%;
+}
+.form-label-coti {
+  font-size: 100%;
+  padding-bottom: 5px;
+}
+.form-textarea-coti {
+  border-radius: 10px;
+  min-height: 8vh;
+  width: 20vw;
+
+  border-color: black;
+
+  background-color: #ececec;
+  font-size: 100%;
+}
+.scrollit-coti {
+  overflow: scroll;
+  height: 50vh;
+  width: 90%;
+}
+.seccion_info {
+  display: flex;
+  flex-direction: column;
+}
+.BotonesCotizacion {
+  margin-top: 10%;
+
+  width: 80%;
+}
+.Boton_config_coti {
+  width: max-content;
+  margin-left: 30%;
+  background-color: #ec428b;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.comunicarte-logo {
+  width: 300px;
+}
+
+.cotizacion-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.table-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.title-text {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.property-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 0.6rem;
+}
+
+.no-display {
+  display: none;
+}
