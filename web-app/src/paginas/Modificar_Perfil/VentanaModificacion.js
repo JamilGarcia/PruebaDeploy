@@ -27,9 +27,8 @@ const VentanaModificacion = () => {
   
   //Funcion para cargar datos en ventana de modificar perifl
   useEffect(() => {
-    const {correo_usuario} = datosUsuario;
-    console.log(correo_usuario);
-    window.onbeforeunload = obtenerDatosPerfil("modificar_perfil", correo_usuario, setDatosPerfilUsuario, setCopiaDatosPerfil);
+    const {correo} = datosUsuario;
+    window.onbeforeunload = obtenerDatosPerfil("modificar_perfil", correo, setDatosPerfilUsuario, setCopiaDatosPerfil);
   },[]);
 
 
@@ -124,47 +123,40 @@ const VentanaModificacion = () => {
       validarCamposVacios = false;
     }
 
-    //No hay campos vacios, entonces validar otros elementos
-    //2. Validar si los campos se actualizaron, si no se modificaron no hacer nada, mostrar indicador 
-    let camposDiferentes = true;
-    if(datosPerfilUsuario.primer_nombre !== copiaDatosPerfil.primer_nombre || datosPerfilUsuario.segundo_nombre !== copiaDatosPerfil.segundo_nombre ||
-      datosPerfilUsuario.apellidos !== copiaDatosPerfil.apellidos ||datosPerfilUsuario.correo !== copiaDatosPerfil.correo){//Algun campo es diferente
-      camposDiferentes = false;
-    } 
-
-    //Se actualizo algun campo, revisar si son validos
-        
-    //3. Validar los campos de nombre para que solo acepten letras y espacion con expresion regular
-    let regexNombre = /^[a-zA-ZÑñ][a-zA-ZÑñ\s]*$/;
-    //3.1 Primer nombre
-    if(datosPerfilUsuario.primer_nombre!== "" && !regexNombre.test(datosPerfilUsuario.primer_nombre)){
-      erroresValidacionMP.primer_nombre = "¡El nombre es invalido!";
-      validarCamposGuardar = false;
-    }
-    //3.2 Segundo nombre,verificar que ste vacio
-    if(datosPerfilUsuario.segundo_nombre !== "" && !regexNombre.test(datosPerfilUsuario.segundo_nombre)){
-      erroresValidacionMP.segundo_nombre = "¡El nombre es invalido!";
-      validarCamposGuardar = false;
-    }
-    //3.3 Apellidos
-    if(datosPerfilUsuario.apellidos!== "" &&  !regexNombre.test(datosPerfilUsuario.apellidos)){
-      erroresValidacionMP.apellidos = "¡El apellidos(s)  es invalido!";
-      validarCamposGuardar = false;
-    }
-      
-    //4. Validar que campo de correo sea valido
-    let regex_Correo = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    const dominioCorreo = 'comunicartehn.com';
-    if(datosPerfilUsuario.correo!== "" && !regex_Correo.test(datosPerfilUsuario.correo)){
-      erroresValidacionMP.correo = "¡El correo es invalido!";
-      validarCamposGuardar = false;
-    } else {
-      let correoCaseSensitive = datosPerfilUsuario.correo.toLowerCase();
-      if( datosPerfilUsuario.correo !== "" && !correoCaseSensitive.endsWith(`@${dominioCorreo}`)){
-        erroresValidacionMP.correo = "Este correo no es de la empresa.";
-          validarCamposGuardar = false;       
+      //No hay campos vacios, entonces validar otros elementos
+      //2. Validar si los campos se actualizaron, si no se modificaron no hacer nada, mostrar indicador 
+      let camposDiferentes = true;
+      if(datosPerfilUsuario.primer_nombre !== copiaDatosPerfil.primer_nombre || datosPerfilUsuario.segundo_nombre !== copiaDatosPerfil.segundo_nombre ||
+        datosPerfilUsuario.apellidos !== copiaDatosPerfil.apellidos ||datosPerfilUsuario.correo !== copiaDatosPerfil.correo){//Algun campo es diferente
+        camposDiferentes = false;
       } 
-    }
+
+      //Se actualizo algun campo, revisar si son validos
+        
+      //3. Validar los campos de nombre para que solo acepten letras y espacion con expresion regular
+      let regexNombre = /^[a-zA-ZÑñ][a-zA-ZÑñ\s]*$/;
+      //3.1 Primer nombre
+      if(datosPerfilUsuario.primer_nombre!== "" && !regexNombre.test(datosPerfilUsuario.primer_nombre)){
+        erroresValidacionMP.primer_nombre = "¡El nombre es invalido!";
+        validarCamposGuardar = false;
+      }
+      //3.2 Segundo nombre,verificar que ste vacio
+      if(datosPerfilUsuario.segundo_nombre !== "" && !regexNombre.test(datosPerfilUsuario.segundo_nombre)){
+        erroresValidacionMP.segundo_nombre = "¡El nombre es invalido!";
+        validarCamposGuardar = false;
+      }
+      //3.3 Apellidos
+      if(datosPerfilUsuario.apellidos!== "" &&  !regexNombre.test(datosPerfilUsuario.apellidos)){
+        erroresValidacionMP.apellidos = "¡El apellidos(s)  es invalido!";
+        validarCamposGuardar = false;
+      }
+      //4. Validar que campo de correo sea valido
+      let regex_Correo = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+      if(datosPerfilUsuario.correo!== "" && !regex_Correo.test(datosPerfilUsuario.correo)){
+        erroresValidacionMP.correo = "¡El correo es invalido!";
+        validarCamposGuardar = false;
+      }
       setEroresMP( erroresValidacionMP);
     return validarCamposGuardar;
   }

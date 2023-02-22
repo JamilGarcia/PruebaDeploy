@@ -1,4 +1,3 @@
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import '../../assets/hojas-de-estilo/minimenu.css';
@@ -26,5 +25,5 @@ const minimenu = () => {
       
   );
   }
-
+  
   export default minimenu;

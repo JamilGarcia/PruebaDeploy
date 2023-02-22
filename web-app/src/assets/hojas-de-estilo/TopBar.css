@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 
 .topbar {
-  background: #ff69b4;
+  background-color: #EC428C;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,14 +12,13 @@
   align-content: center;
   height: 12vh;
   width: 100vw;
-  border-bottom: 1px solid #7d7d7e;
+  border-bottom: 1px solid #202124;
   position: fixed;
 }
 
 .topbar-left {
-
-  color: white ;
-  text-shadow: #F9C6DD 0.1em 0.1em 0.3em;
+  color: #202124 ;
+  /*text-shadow: #F9C6DD 0.1em 0.1em 0.3em;*/
   font-size: 2.5rem;
   padding-left: 1rem;
 }
@@ -27,7 +26,7 @@
 .topbar-right {
   font-size: 1.5rem;
   padding-right: 1rem;
-  color: white ;
+  color: #202124 ;
   text-shadow: #7d7d7e 0.1em 0.1em 0.2em;
 }
 
@@ -36,6 +35,6 @@
 }
 
 .btn{
-  color: white ;
-  text-shadow: #F9C6DD 0.1em 0.1em 0.3em;
+  color: #202124 ;
+  /*text-shadow: #F9C6DD 0.1em 0.1em 0.3em;*/
 }

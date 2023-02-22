@@ -4,19 +4,12 @@ import DropdownButton from "./Dropdown";
 import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalProvider";
 
-import { FaBars } from 'react-icons/fa';
-
-
 const TopBar = () => {
   const {menuHidden, setMenuHidden} = useContext(GlobalContext);
-
   return (
     <React.Fragment>
       <div className="topbar">
         <div className="topbar-left">
-          <button className="btn"  style={{color:'white'}}onClick={() => setMenuHidden(!menuHidden)} />
-            <FaBars/>
-
           <button className="btn" onClick={() => setMenuHidden(!menuHidden)}>
             <i class="fas fa-bars"></i>
           </button>

@@ -42,19 +42,10 @@ export const validarCamposModificarPerfilEmpleado = (datosEmpleado, setFormError
         validarCamposGuardar = false;
     } else {
         let regex_Correo = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-        const dominioCorreo = 'comunicartehn.com';
-        let correoCaseSensitive = datosEmpleado.correo.toLowerCase();
         if(!regex_Correo.test(datosEmpleado.correo)){
             erroresValidacionMP.correo = "¡El correo es invalido!";
             validarCamposGuardar = false;
-        } else {
-            //Correo es valido, revisar si el correo es del dominio
-            if(!correoCaseSensitive.endsWith(`@${dominioCorreo}`)){
-                erroresValidacionMP.correo = "¡Correo no es de la empresa!"               
-                validarCamposGuardar = false;
-            } 
         }
-        
     }
 
     //1.4 Fecha de Nacimiento

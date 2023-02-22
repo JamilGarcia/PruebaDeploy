@@ -4,7 +4,7 @@ import "../../assets/hojas-de-estilo/ListarEmpleados.css";
 const TablaListaEmpleados = ({columnas, datosTabla, setUsuarioSeleccionado}) => {
 
     const [selectedRow, setSelectedRow] = useState(null);
-    const [estadoFiltro, setEstadoFiltro] = useState('');
+
     const handleRowClick = async dataRow => {
         setSelectedRow(selectedRow === dataRow ? null : dataRow);
         setUsuarioSeleccionado(selectedRow === dataRow ? null : dataRow.correo);

@@ -11,7 +11,7 @@ const SideBar = (props) => {
 
   return (
     <section
-      className={`${menuHidden ? 'sidebar-hidden': ''}`}
+      className={`sidebar-container ${menuHidden ? 'sidebar-hidden': ''}`}
     >
       <div
         className={`sidebar ${menuHidden ? 'sidebar-hidden': ''}`}

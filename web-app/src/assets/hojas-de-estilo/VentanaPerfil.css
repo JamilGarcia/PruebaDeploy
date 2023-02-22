@@ -1,71 +1,71 @@
 .App {
-  text-align: left;
-}
-
-.ParteSuperiorRosa {
-  background-color: #f6c6dc;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #ec428b;
-}
-
-.name {
-  font-size: 40px;
-  padding-left: 100px;
-  font-weight: bold;
-}
-
-.puesto {
-  font-size: 30px;
-  padding-left: 300px;
-  font-weight: bold;
-}
-
-.App-logo {
-  border-radius: 50%;
-  width: 170px;
-  padding-right: 30px;
-  padding-left: 270px;
-}
-
-.Comunicarte-logo {
-  width: 200px;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 1000px;
-}
-
-.ParteInferiorBlanca {
-  background-color: #ffffff;
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
-
-.fechanac {
-  display: flex;
-  text-align: center;
-}
-.fechaini {
-  text-align: center;
-}
-.correo {
-  text-align: center;
-  padding-right: 5%;
-}
-
-.MoverModificacion {
-  position: absolute;
-  left: 1250px;
-  top: 670px;
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-}
+    text-align: left;
+  }
+  
+  .ParteSuperiorRosa {
+    background-color: #f6c6dc;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #ec428b;
+  }
+  
+  .name {
+    font-size: 40px;
+    padding-left: 100px;
+    font-weight: bold;
+  }
+  
+  .puesto {
+    font-size: 30px;
+    padding-left: 300px;
+    font-weight: bold;
+  }
+  
+  .App-logo {
+    border-radius: 50%;
+    width: 170px;
+    padding-right: 30px;
+    padding-left: 270px;
+  }
+  
+  .Comunicarte-logo {
+    width: 200px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 1000px;
+  }
+  
+  .ParteInferiorBlanca {
+    background-color: #ffffff;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .fechanac {
+    display: flex;
+    text-align: center;
+  }
+  .fechaini {
+    text-align: center;
+  }
+  .correo {
+    text-align: center;
+    padding-right: 5%;
+  }
+  
+  .MoverModificacion {
+    position: absolute;
+    left: 1250px;
+    top: 670px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }

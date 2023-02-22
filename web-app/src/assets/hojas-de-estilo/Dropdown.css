@@ -1,11 +1,6 @@
 /* ---------------------------------------------------
     DROPDOWN STYLE
 ----------------------------------------------------- */
-.seccionDropdown{
-    display: flex;
-    width: 90%;
-    margin-left: 60%;
-}
 .botondeperfil {
     background-color: #ec428c;
     color: white;
@@ -13,9 +8,5 @@
     margin-top: 2em;
     margin-bottom: 1em;
   }
-.foto_in_dropdown{
-    margin-right: 5%;
-    height: 20%;
-    width: 20%;
-}
+
   

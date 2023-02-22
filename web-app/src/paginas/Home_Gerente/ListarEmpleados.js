@@ -307,8 +307,8 @@ const ListarEmpleados = () => {
           </div>
           <div className="Juntos2">
                 <FormControl>
-                    <FormLabel>Estado</FormLabel>
-                        <RadioGroup  defaultValue="Activo">
+                    <FormLabel style={"color: white;"}>Estado</FormLabel>
+                        <RadioGroup  defaultValue="Activo" className="radiosbtn">
                             <FormControlLabel value="Activo" control={<Radio />} label="Activo" />
                             <FormControlLabel value="Inactivo" control={<Radio />} label="Inactivo" />
                         </RadioGroup>

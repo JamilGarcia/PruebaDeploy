@@ -32,8 +32,6 @@ import EnConstruccion from './paginas/EnConstruccion';
 // import Minimenu from './paginas/Home_Gerente/MiniMenu';
 import ListarCotizaciones from './paginas/Home_EjecutivoCuenta/ListarCotizaciones'
 import ModificarFacturaSG from './paginas/Home_Subgerente/ModificarFacturaSG';
-import Manejo_CamposCotizaciones from './paginas/Manejo_CamposCotizaciones/Manejo_CamposCotizaciones';
-
 
 
 function App() {
@@ -54,15 +52,14 @@ function App() {
               <Route path="gestion_perfiles/modificarEliminar_perfil" element={<GestionarPerfilesMOD />} />
               <Route path="gestion_perfiles/eliminar_perfil" element={<GestionarPerfilesEL />} />
               <Route path="registro_activos_fijos" element={<EnConstruccion />} />
-              <Route path="manejar-campos-cotizaciones" element={<Manejo_CamposCotizaciones />}/>
             </Route>
 
             <Route path="/Subgerente" element={<SubgerenteScreen />} >
               <Route index element={<HomeSection DataSidebar={SideBarDataSG} />} />
-              <Route path="registrar_facturas" element={<EnConstruccion />} />
+
+              <Route path="registrar_facturas" element={<ModificarFacturaSG />} />
               <Route path="registro_activos_fijos" element={<EnConstruccion />} />
               <Route path="gestion_perfiles" element={<EnConstruccion />} />
-              <Route path="manejar-campos-cotizaciones" element={<Manejo_CamposCotizaciones />}/>
             </Route>
 
             <Route path="/Ejecutivo_Cuenta" element={<EjecutivoScreen />} >

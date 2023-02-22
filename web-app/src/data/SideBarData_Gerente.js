@@ -1,5 +1,7 @@
-import { FaFileInvoiceDollar,  FaCashRegister, FaUserEdit, FaArchive  } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
+import { FaFileInvoiceDollar } from "react-icons/fa";
+import { FaCashRegister } from "react-icons/fa";
+import { FaUserEdit } from "react-icons/fa";
+import { FaArchive } from "react-icons/fa";
 
 export const SideBarDataG = [
 
@@ -27,10 +29,5 @@ export const SideBarDataG = [
         title: "    Registro de Activos Fijos",
         path: "/Gerente/registro_activos_fijos",
         icon: (props) => <FaArchive {...props}/>
-    },
-    {
-        title: "    Manejar Campos Cotizaciones",
-        path: "/Gerente/manejar-campos-cotizaciones",
-        icon: (props) => <GiNotebook {...props}/>
     }
 ]

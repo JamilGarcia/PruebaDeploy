@@ -2,28 +2,33 @@
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
-/* .sidebar-container {
-  //position: fixed;
-} */
+.sidebar-container {
+  position: fixed;
+}
+
 
 .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 1250%;
+  background-color: #202124;
+  color: white ;
+  /*text-shadow: #F9C6DD 0.1em 0.1em 0.3em;*/
+  transition: all 0.5s;
   border-style: solid;
   border-width: 1px;
-  border-color: #7d7d7e;
+  border-color: #EC428C;
   border-left: none;
   border-top: none;
-  height: 100%;
+  min-height: 88vh;
+  width: 20vw;
   position: fixed;
-  float: left;
-  width: 20%;
+  height: 87.5vh;
+  max-height: 87.5vh;
   top: 12vh;
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.5s;
 }
+
+
 .sidebar-hidden {
   width: 40px;
   transition: all 0.5s;
@@ -32,10 +37,6 @@
   .sidebar-hidden {
     width: 0px;
     transition: all 0.5s;
-    position: relative;
-  }
-  .sidebar-text{
-    padding-left: 5px;
   }
 }
 
@@ -50,6 +51,14 @@
   transition: all 0.5s;
 }
 .sidebar-header {
+  background:white;
+}
+.sidebar ul p {
+  color: #ff69b4;
+}
+.Elementos {
+  color: white;
+  /*text-shadow: #F9C6DD 0.1em 0.1em 0.3em;*/
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -102,8 +111,8 @@
     background: #000000;
   }  */
 .sidebar-spacer {
-  padding-left: 5%;
+  padding-left: 20vw;
 }
 .sidebar-spacer-hidden {
-  padding-left: 30%;
+  padding-left: 30px;
 }

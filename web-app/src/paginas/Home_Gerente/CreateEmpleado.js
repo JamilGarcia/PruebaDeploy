@@ -56,6 +56,7 @@ const CreateEmpleado = () => {
     }, [formErros]);
     //Metodo para eliminar Error
     const quitarMensajeError = (e) => {
+        console.log(e.target.name);
         setFormErros({...formErros, [e.target.name]: ''});
     }
     const handleChange = (e) => {
@@ -193,7 +194,6 @@ const CreateEmpleado = () => {
     const validate = () =>{
         const erros = {}
         const rgex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-        const dominioCorreo = 'comunicartehn.com';
         if(!nuevoEmpleado.primer_nombre){
             erros.primer_nombre = "Ingrese primer nombre";
         }
@@ -208,14 +208,8 @@ const CreateEmpleado = () => {
         }else{
             if(!rgex.test(nuevoEmpleado.correo)){
                 erros.correo = "Este no es un correo valido.";
-            } else {
-                //Revisar si el correo es del dominio
-                let correoCaseSensitive = nuevoEmpleado.correo.toLowerCase();
-                if(!correoCaseSensitive.endsWith(`@${dominioCorreo}`)){
-                    erros.correo = "Este correo no es de la empresa."               
-                } 
-            }
-            
+                
+            }   
         }
         if(!nuevoEmpleado.password_usuario){
             erros.password_usuario = "Ingrese Contraseña";

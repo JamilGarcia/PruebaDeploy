@@ -1,21 +1,18 @@
 import React, { createContext, useState} from "react";
 import { useNavigate} from 'react-router-dom';
 import Swal from "sweetalert2";
-import { obtenerNombreUsuario } from "../Componentes/peticiones/obtenerNombreUsuario";
 
 export const AuthContext= createContext(null);
 
 //Creacion de provider
 const initialDatosUser = {
-    correo_usuario: "", posicion_Usuario: "", nombre_usuario: ""
+    correo_usuario: "",
+    posicion_Usuario: ""
 }
 export const AuthProvider = ({children}) => {
 
     const [loggedIn, setLoggedIn] = useState(false);
     const [datosUsuario, setDatosUsuario] = useState(initialDatosUser);
-
-    const setNombreUsuario = (nombreObtenido) => setDatosUsuario({nombre_usuario: nombreObtenido});
-
     const navigate = useNavigate();
 
     const loginUsuario = async (email, password , requestFetchLogin, setRequestFetchLogin) => {
@@ -54,14 +51,9 @@ export const AuthProvider = ({children}) => {
 
                 if(validarPeticion){
                     if(data.Posicion!== ''){
-                        setDatosUsuario({correo_usuario: email,posicion_Usuario: data.Posicion});
-                        let datosUsuario = {correo_usuario: email,posicion_Usuario: data.Posicion};
-                        obtenerNombreUsuario(datosUsuario, setNombreUsuario);
+                        setDatosUsuario({correo: email,posicion_Usuario: data.Posicion});
                         setLoggedIn(current => !current);
                         setRequestFetchLogin(false);
-                        /*Usuario ya es valido, obtener nombre de usuario */
-                        
-
                         //Redireccionar a base de data de Rest API
                         if(data.Posicion === "Gerente"){
                             navigate('/Gerente');

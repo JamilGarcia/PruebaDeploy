@@ -1,15 +1,13 @@
 .fondo-pantallaLE {
-  min-height: 83vh;
-  background-image: linear-gradient(
-    #ec428c 0%,
-    #ec428c 40%,
-    #f9c6dd 40%,
-    #f9c6dd 100%
-  );
+  height: 100%;
+  background-color: #F9C6DD;
   text-align: center;
   display: flex;
-  align-items: stretch;
-  justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 }
 .scrollitLE{
   overflow-y: scroll;
@@ -17,20 +15,19 @@
 }
 .caja-derechaLE {
   background-color: white;
-  min-height: 60vh;
-  min-width: 40%;
+  height: 70%;
+  width: 50%;
   border-radius: 15px;
-  max-height: 75vh;
-  max-width: 60vw;
-  
+  color:black;
+  border: 1px solid #ec428c;
 }
 .caja-izquierdaLE {
   background-color: white;
-  min-height: 80vh;
-  min-width: 40%;
+  height: 90%;
+  width: 45%;
   border-radius: 15px;
-  max-height: 82vh;
-  max-width: 60vw;
+  color: black;
+  border: 1px solid #ec428c;
 }
 
 .botonesModificacionLE {
@@ -52,15 +49,17 @@
   text-decoration: none;
   font-family: "CrimsonText", sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: black;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.2s;
-  background-color: #ec428c;
+  background-color: white;
+  border-color: #ec428c;
 }
 
 .botonModificacionLE:hover {
-  border-color: grey;
+  background-color: #ec428c;
+  color: white;
 }
 
 .botonCambiarFotoLE {
@@ -70,7 +69,7 @@
   text-decoration: none;
   font-family: "CrimsonText", sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: white;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.2s;
@@ -122,8 +121,16 @@
   font-size: 100%;
   padding-bottom: 6px;
 }
-.form-control-modElim{
+.form-control-modElim, .form-control-mod, #tipo_Cuenta{
   font-size: 100%;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #ec428c;
+  color: black;
+}
+
+.juntos2{
+  color:white !important;
 }
 
 .mensaje_error-ModElim{
@@ -161,4 +168,40 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.table-stripedLE{
+  color: white;
+  border-color: #3C4042;
+  border: 1px solid #3C4042;
+  width: 95%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 1%;
+  align-items: center;
+}
+.table-stripedLE th{
+  background-color: #EC428C;
+  border-color: #3C4042;
+  border: 1px solid #3C4042;
+  color: white;
+}
+
+.table-stripedLE td{
+  border-color: #3C4042;
+  border: 1px solid #3C4042;
+
+}
+
+.table-stripedLE tr{
+  background-color: white;
+  border-color: #3C4042;
+  border: 1px solid #3C4042;
+  color: black;
+}
+
+.table-stripedLE tr:hover{
+  background-color: #F9C6DD;
+  border-color: #3C4042;
+  border: 1px solid #3C4042;
+  color: white;
 }

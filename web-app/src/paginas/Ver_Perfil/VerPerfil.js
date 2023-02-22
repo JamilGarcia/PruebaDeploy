@@ -107,13 +107,10 @@ const VerPerfil = () => {
             className="Comunicarte-logo"
             alt="LogoComunicarte"
           />
-<<<<<<< HEAD
-=======
       </div>
       <div className="caja-perfil">
         <div className="top">
           
->>>>>>> b2fb13532aca1d40fb32b4917de94ea9be7d3550
           <img src={dataPerfilUsuario.foto_perfil} className="Avatar-logo" alt="Avatar" />
           <h3>
             {dataPerfilUsuario.primer_nombre} {dataPerfilUsuario.segundo_nombre}{" "}

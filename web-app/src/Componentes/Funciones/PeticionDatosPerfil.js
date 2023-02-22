@@ -1,7 +1,7 @@
 
 export const obtenerDatosPerfil = async (ventanaActual, correoUsuario, setDatosPerfilUsuario, setCopiaDatosPerfil) => {
     const body = {correo: correoUsuario};
-    console.log(body);
+
     if(correoUsuario != null){
         try {
             //https://comunicartewebapp-api.herokuapp.com/

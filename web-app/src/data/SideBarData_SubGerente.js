@@ -1,5 +1,6 @@
-import { FaFileInvoiceDollar, FaCashRegister, FaUserEdit   } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
+import { FaFileInvoiceDollar } from "react-icons/fa";
+import { FaCashRegister } from "react-icons/fa";
+import { FaUserEdit } from "react-icons/fa";
 
 export const SideBarDataSG = [
 
@@ -23,9 +24,4 @@ export const SideBarDataSG = [
     path: "/Subgerente/gestion_perfiles",
     icon: (props) => <FaUserEdit {...props} />
   },
-  {
-    title: "    Manejar Campos Cotizaciones",
-    path: "/Subgerente/manejar-campos-cotizaciones",
-    icon: (props) => <GiNotebook {...props}/>
-  }
 ]

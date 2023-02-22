@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../../assets/hojas-de-estilo/Cotizacion.css';
 import Swal from 'sweetalert2'
-
-// import html2pdf from 'html2pdf.js'
-
 import html2pdf from 'html2pdf.js'
 import Minimenu from "./MiniMenuCotizaciones";
 const Cotizacion = () => {
@@ -84,16 +81,6 @@ const Cotizacion = () => {
           var element = document.getElementById('table-container');
           let cotizacionHeaderEl = document.getElementById('cotizacion-header')
           cotizacionHeaderEl.classList.toggle('no-display');
-          // html2pdf().from(element).save('cotización.pdf').then(() => {
-          //   cotizacionHeaderEl.classList.toggle('no-display');
-          //   Swal.fire({
-          //     icon: 'success',
-          //     title: 'Operación Exitosa',
-          //     text: 'Creacion de Cotizaciones Exitosa',
-          //     timer: 1500,
-          //   })
-          //  // window.location.reload();
-          // });
           html2pdf().from(element).save('cotización.pdf').then(() => {
             cotizacionHeaderEl.classList.toggle('no-display');
             Swal.fire({

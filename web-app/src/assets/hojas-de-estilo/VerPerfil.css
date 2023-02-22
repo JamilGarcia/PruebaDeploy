@@ -58,10 +58,6 @@
 .Avatar-logo{
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 22vh;
-  height: 23vh;
   min-width: 90%;
 }
 

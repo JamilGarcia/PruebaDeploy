@@ -1,27 +1,14 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../../assets/hojas-de-estilo/HomeSection.css';
-import { AuthContext } from '../../context/AuthContext';
-import { obtenerNombreUsuario } from '../peticiones/obtenerNombreUsuario';
 
 const HomeSection = ({ DataSidebar }) => {
-
-  const {datosUsuario} = useContext(AuthContext);
-  const [nombreUsuario, setNombreUsuario] = useState("");
-
-  useEffect(() => {
-    if(datosUsuario.nombre_usuario === undefined){
-      window.onbeforeunload = obtenerNombreUsuario(datosUsuario, setNombreUsuario);
-    } else {
-      setNombreUsuario(datosUsuario.nombre_usuario);
-    } 
-  },[])
   return (
-    <section>
+    <section className="fondo-pantalla-coti">
       <div className="welcome-container">
         <div className="welcome-text-container">
           <div className="welcome-title full-width">
-            Bievenido, {nombreUsuario}
+            Bievenido, usuario
           </div>
           <br />
           <div className="welcome-text">
